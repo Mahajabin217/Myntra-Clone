@@ -1,10 +1,10 @@
-import Footer from "./Footer";
-import Header from "./Header";
+// import Footer from "./Footer";
+// import Header from "./Header";
 
 const Bag = () => {
     return (
         <>
-            <Header></Header>
+            {/* <Header></Header> */}
             <main>
                 <div className="bag-page">
                     <div className="bag-items-container">
@@ -32,7 +32,7 @@ const Bag = () => {
                     <div className="remove-from-cart">X</div>
                 </div>  */}
 
-                    </div>
+                    {/* </div>
                     <div className="bag-summary">
                         <div className="bag-details-container">
                             <div className="price-header">PRICE DETAILS (2 Items) </div>
@@ -56,12 +56,12 @@ const Bag = () => {
                         </div>
                         <button className="btn-place-order">
                             <div className="css-xjhrni">PLACE ORDER</div>
-                        </button>
+                        </button> */}
                     </div>
 
                 </div>
             </main>
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </>
     )
 }
