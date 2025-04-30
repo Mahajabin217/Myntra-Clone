@@ -1,5 +1,7 @@
 const HomeItems = ({ item }) => {
+
     return (
+
         <div className="item-container">
             <img className="item-image" src={item.image} alt="item image" />
             <div className="rating">
@@ -16,4 +18,5 @@ const HomeItems = ({ item }) => {
         </div>
     );
 };
+
 export default HomeItems;

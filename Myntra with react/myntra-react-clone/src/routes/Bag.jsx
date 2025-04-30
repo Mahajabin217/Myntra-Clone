@@ -1,64 +1,36 @@
 // import Footer from "./Footer";
 // import Header from "./Header";
 
+import BagItem from "../Components/BagItem";
+import BagSummary from "../Components/BagSummary";
+
 const Bag = () => {
+
+    const item = {
+        id: '001',
+        image: 'images/1.jpg',
+        company: 'Carlton London',
+        item_name: 'Rhodium-Plated CZ Floral Studs',
+        original_price: 1045,
+        current_price: 606,
+        discount_percentage: 42,
+        return_period: 14,
+        delivery_date: '10 Oct 2023',
+        rating: {
+            stars: 4.5,
+            count: 1400,
+        },
+    };
+
     return (
         <>
             {/* <Header></Header> */}
             <main>
                 <div className="bag-page">
                     <div className="bag-items-container">
-                        {/* <div className="bag-item-container">
-                    <div className="item-left-part">
-                        <img className="bag-item-img" src="../images/4.jpg">
+                        <BagItem item={item}></BagItem>
                     </div>
-                    <div className="item-right-part">
-                        <div className="company">ADIDAS</div>
-                        <div className="item-name">Men Printed Polo Collar Indian Cricket ODI Jersey</div>
-                        <div className="price-container">
-                            <span className="current-price">Rs 999</span>
-                            <span className="original-price">Rs 999</span>
-                            <span className="discount-percentage">(0% OFF)</span>
-                        </div>
-                        <div className="return-period">
-                            <span className="return-period-days">14 days</span> return available
-                        </div>
-                        <div className="delivery-details">
-                            Delivery by
-                            <span className="delivery-details-days">10 Oct 2023</span>
-                        </div>
-                    </div>
-
-                    <div className="remove-from-cart">X</div>
-                </div>  */}
-
-                    {/* </div>
-                    <div className="bag-summary">
-                        <div className="bag-details-container">
-                            <div className="price-header">PRICE DETAILS (2 Items) </div>
-                            <div className="price-item">
-                                <span className="price-item-tag">Total MRP</span>
-                                <span className="price-item-value">Rs1284</span>
-                            </div>
-                            <div className="price-item">
-                                <span className="price-item-tag">Discount on MRP</span>
-                                <span className="price-item-value priceDetail-base-discount">-Rs143</span>
-                            </div>
-                            <div className="price-item">
-                                <span className="price-item-tag">Convenience Fee</span>
-                                <span className="price-item-value">Rs 99</span>
-                            </div>
-                            <hr/>
-                                <div classNameName="price-footer">
-                                    <span className="price-item-tag">Total Amount</span>
-                                    <span className="price-item-value">Rs 1240</span>
-                                </div>
-                        </div>
-                        <button className="btn-place-order">
-                            <div className="css-xjhrni">PLACE ORDER</div>
-                        </button> */}
-                    </div>
-
+                    <BagSummary></BagSummary>
                 </div>
             </main>
             {/* <Footer></Footer> */}
